@@ -1,0 +1,189 @@
+#containerMain {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    'im'
+    'mn'
+    ;
+}
+
+
+#boxthing {
+    position: fixed;
+    width: 100%;
+}
+
+#imgMeny {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menuthing {
+    height: 100%;
+    width: 100%;
+    background: #181818;
+    position: fixed;
+    top: 0;
+    left: -10000px;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 15px;
+    z-index: 10000000;
+}
+
+.white {
+    color: white;
+}
+
+.list1 {
+    padding-top: 75px;
+    color: white;
+    font-size: 2rem;
+}
+
+.menuList {
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.normalText {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.showMenu {
+    left: 0px;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+/* .showMenu{
+    animation-duration: 0.5s;
+    animation-name: menuOpen;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}  */
+
+/* @keyframes menuOpen{
+    0%{
+        position: fixed;
+    }
+    100%{
+        transform: translate(100vw, 0px);
+    }
+} */
+
+#imgMain {
+    display: flex;
+    grid-area: im;
+    background-color: #97767C;
+    background: url(/img/grilled-cheese-sandwich.jpg);
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#titleBox {
+    margin-top: 300px;
+    font-size: 3rem;
+    background-color: rgba(0,0,0,0.7);
+    color: rgb(173, 173, 173);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 50px;
+    position: sticky;
+    top: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main1 {
+    grid-area: mn;
+    background-color: #97767C;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+    background: url(/img/grilled-cheese-vertical-jpg-1522266150.jpg);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* LORE */
+
+#loreGrid {
+    display: grid;
+    grid-template-areas:
+    'hd'
+    'lo'
+    'bt'
+    ;
+}
+
+#loreHead {
+    grid-area: hd;
+    background-color: red;
+}
+
+#loreText {
+    grid-area: lo;
+    background-color: blue;
+}
+
+#loreBottom {
+    grid-area: bt;
+    background-color: green;
+}
