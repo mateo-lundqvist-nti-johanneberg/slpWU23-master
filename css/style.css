@@ -274,6 +274,63 @@ body {
     width: 100vw;
 }
 
+#rapper {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+    'ca'
+    'ga'
+    'ab'
+    ;
+}
+
+
+#cabeza {
+    display: flex;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    background: #6d6d6d;
+    grid-area: ca;
+}
+
+#galleryimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ga;
+}
+
+#bollar {
+    height: 759px;
+    width: 878px;
+}
+
+#lapartedeabajo {
+    display: flex;
+    grid-area: ab;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    background: #6d6d6d;
+}
+
+@media (max-width: 600px) {
+    #bollar {
+        height: 303.6px;
+        width: 351.2px;
+    }
+}
+
 @media (min-width: 600px) {
     #imgMain {
         background: url(/img/tips-for-perfect-grilled-cheese.png);
