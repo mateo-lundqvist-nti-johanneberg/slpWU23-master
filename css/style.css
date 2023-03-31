@@ -157,6 +157,7 @@ a:active{
     background: url(/img/grilled-cheese-vertical-jpg-1522266150.jpg);
 }
 
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -212,6 +213,67 @@ body {
     padding-left: 10px;
 }
 
+#orderText {
+    display: flex;
+    background-color: rgba(233, 233, 233, 0.637);
+    color: rgb(26, 26, 26);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    padding-right: 10px;
+    padding-left: 10px;  
+}
+
+#orderGrid {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'od'
+    'om'
+    'ob'
+    ;
+}
+
+#titleOrder {
+    font-size: 1.5rem;
+    margin-top: 100px;
+    
+}
+
+.Name {
+    height: 15px;
+    margin-left: 10px;
+}
+
+.nameBox {
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.cheese {
+    width: 20px;
+    margin-top: 50px;
+}
+
+#orderButton {
+    margin-top: 100px;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+#orderMain {
+    grid-area: lo;
+    background-color: blue;
+    background: url(/img/grilled-cheese-sandwich.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
 @media (min-width: 600px) {
     #imgMain {
         background: url(/img/tips-for-perfect-grilled-cheese.png);
@@ -219,6 +281,20 @@ body {
 
     #loreText {
         background: url(/img/tips-for-perfect-grilled-cheese.png);
+    }
+
+    #loreMain {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    
+    #orderMain {
+        background: url(/img/tips-for-perfect-grilled-cheese.png);
+    }
+
+    #orderText {
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
